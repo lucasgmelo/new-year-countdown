@@ -1,8 +1,7 @@
 const countDate = new Date("jan 1 2021 00:00:00").getTime();
-console.log(newYear);
 
-const hour = document.getElementById('html-hour');
-const minute = document.getElementById('html-min');
+const hours = document.getElementById('html-hour');
+const minutes = document.getElementById('html-min');
 const seconds = document.getElementById('html-sec');
 
 function newYear() {
@@ -18,11 +17,10 @@ function newYear() {
         let h = Math.floor((gap % (day)) / (hour));
         let m = Math.floor((gap % (hour)) / (minute));
         let s = Math.floor((gap % (minute)) / second);
-        console.log(s, m, h)
 
         seconds.innerHTML = `${s}s`;
-        minute.innerHTML = `${m}min`;
-        hour.innerHTML = `${h}h`;
+        minutes.innerHTML = `${m}min`;
+        hours.innerHTML = `${h}h`;
 }
 
 setInterval(newYear, 1000);

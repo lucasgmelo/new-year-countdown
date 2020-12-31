@@ -13,6 +13,24 @@ p {
     margin: 0;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    position: fixed;
+    bottom: 10px;
+
+    width: 100vw;
+}
+
+footer a,
+footer p {
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #333;
+    text-decoration: none;
+}
+
 .container {
     margin-top: 75px;
 }
@@ -20,7 +38,7 @@ p {
 .container .text h1{
     font-family: 'Baskerville';
     font-weight: 100;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin: 0;
@@ -36,7 +54,7 @@ p {
 #countdown{
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 10px;
     z-index: 1;
 
@@ -44,11 +62,11 @@ p {
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     
-    width: 75vw;
+    width: 70vw;
     
-    color: #403D32;
+    color: #524F44;
 }
 
 #countdown p {

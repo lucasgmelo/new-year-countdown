@@ -1,16 +1,27 @@
-// const minute = 10;
-// let time = minute * 60;
+const countDate = new Date("jan 1 2021 00:00:00").getTime();
+console.log(newYear);
 
-// const countdownElement = document.getElementById('countdown');
+const hour = document.getElementById('one');
+const minute = document.getElementById('two');
+const seconds = document.getElementById('three');
 
-// setInterval(updateCountdown, 1000);
+function newYear() {
+    let now = new Date().getTime();
+        gap = countDate - now;
 
-// function updateCountdown() {
-//     const minutes = Math.floor(time / 60);
-//     let seconds = time % 60;
+        let second = 1000;
+        let minute = second * 60;
+        let hour = minute * 60;
+        let day = hour * 24;
 
-//     seconds = seconds < 10 ? '0' + seconds : seconds;
+        let d = Math.floor(gap / (day));
+        let h = Math.floor((gap % (day)) / (hour));
+        let m = Math.floor((gap % (hour)) / (minute));
+        let s = Math.floor((gap % (minute)) / second);
 
-//     countdownElement.innerHTML = `${minutes}:${seconds}`;
-//     time --;
-// }
+        seconds.innerHTML = `${s}s`;
+        minute.innerHTML = `${m}min`;
+        hour.innerHTML = `${h}h`;
+}
+
+setInterval(newYear, 1000);

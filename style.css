@@ -31,6 +31,10 @@ footer p {
     text-decoration: none;
 }
 
+footer a {
+    color: black;
+}
+
 .container {
     margin-top: 75px;
 }

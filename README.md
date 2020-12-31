@@ -7,6 +7,8 @@
 <p>First, I've created a mockup on Figma to simplify all the stylizing stuff.</p>
 <p>This is a New Year Countdown made with HTML, CSS and Javascript!</p>
 
+<p>check it live https://lucasgmelo.github.io/new-year-countdown/ </p>
+
 ## I also did a mobile version. 
 <p>Hope you like it! I loved to create all of this :) </p> 
 

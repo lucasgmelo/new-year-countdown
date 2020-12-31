@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(179.53deg, #FBF7E8 -0.92%, #EDE8D6 107.2%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    margin-top: 75px;
+}
+
+.container .text h1{
+    font-family: 'Baskerville';
+    font-weight: 100;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.container .text #countdown{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 10px;
+    z-index: 1;
+
+    margin-top: 75px;
+}
+
+#countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group {
+    position: fixed;
+    bottom: 50px;
+    min-width: 100vw;
+    z-index: -1;
+}
+
+.wave {
+    position: fixed;
+    bottom: 0;
+    min-width: 100vw;
+    z-index: -1;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

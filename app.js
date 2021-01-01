@@ -1,5 +1,6 @@
-const countDate = new Date("jan 1 2021 00:00:00").getTime();
+const countDate = new Date("jan 1 2022 00:00:00").getTime();
 
+const days = document.getElementById('html-day');
 const hours = document.getElementById('html-hour');
 const minutes = document.getElementById('html-min');
 const seconds = document.getElementById('html-sec');
@@ -21,6 +22,8 @@ function newYear() {
         seconds.innerHTML = `${s}s`;
         minutes.innerHTML = `${m}min`;
         hours.innerHTML = `${h}h`;
+        days.innerHTML = `${d}d`;
+
 }
 
 setInterval(newYear, 1000);

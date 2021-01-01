@@ -104,6 +104,10 @@ letter-spacing: 0.15em;
         font-size: 45px;
     }
 
+    #countdown {
+        width: 90vw;
+    }
+
     .container .text #countdown p {
         font-size: 40px;
     }
@@ -118,6 +122,6 @@ letter-spacing: 0.15em;
     }
 
     #countdown {
-        margin: 0 .5rem;
+        margin: 1rem .5rem;
     }
 }
